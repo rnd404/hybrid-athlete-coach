@@ -1,0 +1,22 @@
+{
+  "mcpServers": {
+    "garmin": {
+      "command": "uvx",
+      "args": [
+        "--python", "3.12",
+        "--from", "git+https://github.com/Taxuspt/garmin_mcp@<PINNED_COMMIT_SHA>",
+        "garmin-mcp"
+      ],
+      "env": {
+        "GARMINTOKENS": "<PATH_TO_TOKEN_DIR_OUTSIDE_ANY_REPO>"
+      }
+    },
+    "training-log": {
+      "command": "npx",
+      "args": [
+        "-y", "@modelcontextprotocol/server-filesystem",
+        "<PATH_TO_TRAINING_LOG_FOLDER_ONLY>"
+      ]
+    }
+  }
+}
