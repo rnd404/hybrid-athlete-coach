@@ -1,0 +1,24 @@
+# Personal data (never commit)
+strength/
+massimali/
+pain-log/
+coach/personal/
+programs/
+*.fit
+*.gpx
+
+# Local-only privacy patterns for tools/pre_push_check.sh
+.sensitive-patterns
+
+# Secrets / tokens
+.env
+.env.*
+!.env.example
+.garminconnect*/
+*.token
+oauth*_token*
+
+# OS / editor
+.DS_Store
+.vscode/
+.idea/
